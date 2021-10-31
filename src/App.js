@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import ContactMe from "./components/ContactMe";
+import Skills from "./components/Skills";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        This is my portfolio website.  
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="one">
+        <Sidebar />
+      </div>
+      <div className="two">
+        <Welcome />
+        <AboutMe />
+        <Skills />
+        <Portfolio />
+        <ContactMe />
+      </div>
     </div>
   );
 }
