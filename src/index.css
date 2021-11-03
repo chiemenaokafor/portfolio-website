@@ -9,7 +9,9 @@
   --box-shadow: 0 4px 8px #00000052;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -23,6 +25,7 @@ html {
 body {
   background-color: var(--color-white);
   margin: 0;
+  letter-spacing: 0.2rem;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -52,7 +55,7 @@ h1 {
   color: var(--color-blue);
 }
 
-h1 span {
+h1 .h1-span {
   color: var(--color-orange);
 }
 
@@ -61,7 +64,15 @@ h2 {
   font-size: 7rem;
 }
 
+h5 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--color-grey-dark);
+}
+
 p {
+  letter-spacing: 0.12rem;
+  line-height: 160%;
   font-size: 2rem;
   color: var(--color-grey-dark);
 }
@@ -70,9 +81,7 @@ h1::after,
 h2::before,
 h2::after,
 p::before,
-p::after,
-button::before,
-button::after {
+p::after {
   position: absolute;
   font-size: 1.2rem;
   font-family: "Open Sans";
@@ -81,24 +90,16 @@ button::after {
 
 h1::after,
 h2::after,
-p::after,
-button::after {
+p::after {
   top: 100%;
   left: -1rem;
-}
-button::after {
-  top: 135%;
 }
 
 h1::before,
 h2::before,
-p::before,
-button::before {
+p::before {
   bottom: 100%;
   left: -1rem;
-}
-button::before {
-  bottom: 135%;
 }
 
 h1::before {
@@ -120,31 +121,10 @@ p::after {
   content: "</p>";
 }
 
-button::before {
-  content: "<btn>";
-}
-button::after {
-  content: "</btn>";
-}
-
 button {
-  color: var(--color-orange);
-  background-color: var(--color-white);
-  font-size: 3rem;
-  padding: 1rem 2rem;
-  border: 0.2rem solid var(--color-orange);
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 button:hover {
-  color: var(--color-white);
-  background-color: var(--color-orange);
-}
-
-p {
-  letter-spacing: 150%;
-  line-height: 150%;
 }
 
 br {

@@ -1,11 +1,13 @@
 .App {
   display: grid;
   grid-template-areas: "sidebar others";
-  grid-template-columns: 17rem 1fr;
+  grid-template-columns: 10rem 1fr;
 }
 
 .one {
   grid-area: sidebar;
+  position: fixed;
+  z-index: 5;
 }
 
 .two {

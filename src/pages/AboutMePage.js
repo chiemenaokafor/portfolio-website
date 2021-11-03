@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "./photos/about-img.png";
+import aboutImg from "./img/about-img.png";
 import {
   IoPersonCircleOutline,
   IoCalendarSharp,
@@ -7,14 +7,8 @@ import {
   IoCallSharp,
   IoMapSharp,
   IoFlagSharp,
-  IoLogoTwitter,
-  IoLogoWhatsapp,
-  IoLogoLinkedin,
-  IoLogoInstagram,
-  IoLogoDribbble,
 } from "react-icons/io5";
 import "./page.css";
-import { Link } from "react-router-dom";
 
 function AboutMe() {
   const AboutMe = () => {};
@@ -82,54 +76,10 @@ function AboutMe() {
               </div>
             </li>
           </ul>
-          <div className="about-me-social">
-            <h5 className="about-me-social-h5">Social accounts</h5>
-            <ul className="about-me-social-ul">
-              <Link
-                target="_blank"
-                to={{ pathname: "https://www.linkedin.com/in/chiemenaokafor/" }}
-                className="about-me-social-li"
-              >
-                <i>
-                  <IoLogoLinkedin />
-                </i>
-              </Link>
-              <Link
-                target="_blank"
-                to={{ pathname: "https://twitter.com/_chiemena" }}
-                className="about-me-social-li"
-              >
-                <i>
-                  <IoLogoTwitter />
-                </i>
-              </Link>
-              <Link
-                target="_blank"
-                to={{ pathname: "https://instagram.com/_chiemena" }}
-                className="about-me-social-li"
-              >
-                <i>
-                  <IoLogoInstagram />
-                </i>
-              </Link>
-              <Link
-                target="_blank"
-                to={{ pathname: "https://dribbble.com/ChiemenaOD" }}
-                className="about-me-social-li"
-              >
-                <i>
-                  <IoLogoDribbble />
-                </i>
-              </Link>
-              <Link
-                target="_blank"
-                to={{ pathname: " https://wa.me/09126630263" }}
-                className="about-me-social-li"
-              >
-                <i>
-                  <IoLogoWhatsapp />
-                </i>
-              </Link>
+          <div>
+            <h5>Social accounts</h5>
+            <ul>
+              <li></li>
             </ul>
           </div>
         </div>
