@@ -39,6 +39,20 @@
   align-items: flex-start;
 }
 
+.landing-welcome {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-img {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  min-width: 100rem;
+  opacity: 0.5;
+}
 .welcome button {
   /* align-self: auto; */
 }
@@ -94,16 +108,18 @@
     "img info"
     ". text";
   grid-row: auto;
-  grid-template-columns: 40rem 120rem;
+  grid-template-columns: 50rem 120rem;
   gap: 5rem;
   justify-content: center;
 }
 
 .about-me-imgg {
-  width: 40rem;
+  /* width: 40rem;
   transform: scale(0.98);
   outline: 2px solid var(--color-orange);
   outline-offset: 5px;
+  border-radius: 5rem; */
+  margin-top: -10rem;
 }
 .about-me-info {
 }
@@ -121,17 +137,17 @@
 }
 
 .about-me-info-icon {
-  border-radius: 2.5rem;
-  width: 10rem;
-  height: 10rem;
-  background-color: var(--color-orange);
+  border-radius: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-grey-dark);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-white);
   transition: all 0.2s ease;
-  outline: 2px solid var(--color-orange);
+  outline: 2px solid var(--color-grey-dark);
 }
 
 .about-me-info-icon:hover {
@@ -155,7 +171,7 @@
   justify-content: center;
 }
 .about-me-text {
-  margin-top: -10rem;
+  grid-area: info;
 }
 @media only screen and (max-width: 1690px) {
   .about-me-container {
@@ -169,41 +185,43 @@
   }
 }
 
+.about-me-social h6 {
+  width: fit-content;
+  font-size: 1.2rem;
+  margin-left: 3.3rem;
+}
 .about-me-social {
-  margin-top: 5rem;
   display: flex;
   align-items: center;
+  margin: -10rem 0 0 4.5rem;
 }
 
 .about-me-social-h5 {
   margin-right: 2rem;
+  color: var(--color-blue);
 }
 
 .about-me-social-li {
+  flex-wrap: wrap;
   position: relative;
   text-decoration: none;
   color: var(--color-grey-dark);
-  font-size: 3rem;
+  font-size: 4rem;
   width: 5rem;
   padding: 1rem;
   margin: 2rem;
   height: 5rem;
-  border: 2px solid var(--color-grey-dark);
   border-radius: 1.5rem;
   transition: all.3s ease;
 }
 
-.about-me-social-li::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -100%;
-  width: 40%;
-  height: 200%;
+.about-me-social-li:hover {
+  color: var(--color-orange);
+}
+.about-me-social-li span {
+  width: 4rem;
+  height: 5rem;
   background-color: var(--color-blue);
-  transform: rotate(-45deg);
-  transition: all.3s ease;
-  overflow: hidden;
 }
 
 .about-me-social-li:hover.about-me-social-li::before {

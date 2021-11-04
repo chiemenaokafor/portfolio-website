@@ -102,7 +102,6 @@ const Items = styled(Link)`
     align-items: center;
     font-size: 4rem;
   }
-  
 `;
 
 const Text = styled.span`
