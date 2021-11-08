@@ -93,6 +93,7 @@
 }
 
 .about-me {
+  height: 100%;
   margin-top: 2rem;
 }
 
@@ -102,24 +103,19 @@
 }
 
 .about-me-container {
-  margin-top: 10rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-areas:
     "img info"
     ". text";
   grid-row: auto;
-  grid-template-columns: 50rem 120rem;
-  gap: 5rem;
+  grid-template-columns: minmax(50rem, 50rem) minmax(50rem, 125rem);
   justify-content: center;
+  align-items: center;
 }
 
 .about-me-imgg {
-  /* width: 40rem;
-  transform: scale(0.98);
-  outline: 2px solid var(--color-orange);
-  outline-offset: 5px;
-  border-radius: 5rem; */
-  margin-top: -10rem;
+  width: 50rem;
 }
 .about-me-info {
 }
@@ -172,17 +168,7 @@
 }
 .about-me-text {
   grid-area: info;
-}
-@media only screen and (max-width: 1690px) {
-  .about-me-container {
-    grid-template-columns: 40rem 1fr;
-  }
-  .about-me-info-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 10rem 10rem;
-    gap: 4rem;
-  }
+  padding-right: 5rem;
 }
 
 .about-me-social h6 {
@@ -190,10 +176,11 @@
   font-size: 1.2rem;
   margin-left: 3.3rem;
 }
+
 .about-me-social {
   display: flex;
   align-items: center;
-  margin: -10rem 0 0 4.5rem;
+  margin-left: 4.5rem;
 }
 
 .about-me-social-h5 {
@@ -228,4 +215,48 @@
   left: 200%;
   top: -150%;
   opacity: 1;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* --------------------------------Skills---------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+.skills {
+  margin: 15rem 5rem;
+}
+
+.skills-content {
+  padding: 5rem;
+  margin: 10rem;
+  display: grid;
+  color: var(--color-white);
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-blue);
+  border-radius: 4rem;
+}
+.skills-content h5 {
+  letter-spacing: 0.5rem;
+  color: var(--color-white);
+}
+
+.skills-content-ul {
+  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-content-ul {
+  margin: 5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-blue);
+  border-radius: 4rem;
+}
+
+.skills-content-neu {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  /* box-shadow: 1rem 1rem 2rem #c4c4c4, -1rem -1rem 2rem #ffffff; */
 }
