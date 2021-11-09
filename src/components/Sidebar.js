@@ -14,7 +14,7 @@ import styled from "styled-components";
 const Container = styled.div`
   position: fixed;
   .active {
-    border: 40px solid var(--color-grey-dark);
+    border: 40px solid var(--color-blue);
   }
 `;
 
@@ -92,8 +92,8 @@ const Items = styled(Link)`
   color: var(--color-white);
 
   &:hover {
-    border-right: 1rem solid var(--color-grey-dark);
-    color: var(--color-grey-dark);
+    border-right: 1rem solid var(--color-green);
+    color: var(--color-green);
   }
 
   & i {

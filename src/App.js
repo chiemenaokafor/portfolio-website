@@ -16,7 +16,7 @@ function App() {
     height: "5rem",
     width: "5rem",
     fontSize: "3rem",
-    color: "var(--color-orange)",
+    color: "var(--color-green)",
     backgroundColor: "var(--color-blue)",
   };
   return (

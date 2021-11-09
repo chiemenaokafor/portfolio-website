@@ -11,5 +11,7 @@
 }
 
 .two {
+  margin: auto;
   grid-area: others;
+  max-width: 2000px;
 }
