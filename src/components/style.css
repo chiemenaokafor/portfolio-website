@@ -94,7 +94,7 @@
 
 .about-me {
   height: 100%;
-  margin-top: 2rem;
+  padding: 5rem 0;
 }
 
 .about-me-h2 {
@@ -221,42 +221,30 @@
 /* --------------------------------Skills---------------------------------------------- */
 /* -------------------------------------------------------------------------------------- */
 .skills {
-  margin: 15rem 5rem;
+  padding: 10rem 5rem;
 }
 
 .skills-content {
-  padding: 5rem;
-  margin: 10rem;
+  padding-top: 5rem;
   display: grid;
-  color: var(--color-white);
+  /* color: var(--color-white); */
   grid-template-columns: 1fr 1fr;
-  background-color: var(--color-blue);
+  grid-template-areas:
+    " para para "
+    "dev ui";
+  gap: 2rem;
+  /* background-color: var(--color-blue); */
   border-radius: 4rem;
 }
 .skills-content h5 {
   letter-spacing: 0.5rem;
-  color: var(--color-white);
+  /* color: var(--color-white); */
+}
+.skills-content p {
+  grid-area: para;
+  margin-bottom: 5rem;
+  /* color: var(--color-white); */
 }
 
 .skills-content-ul {
-  margin: 5rem 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.skills-content-ul {
-  margin: 5rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--color-blue);
-  border-radius: 4rem;
-}
-
-.skills-content-neu {
-  margin: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
-  height: 15rem;
-  /* box-shadow: 1rem 1rem 2rem #c4c4c4, -1rem -1rem 2rem #ffffff; */
 }
