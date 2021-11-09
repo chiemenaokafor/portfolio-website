@@ -262,6 +262,50 @@
   margin: auto;
 }
 
+.portfolio-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-card-container {
+  position: relative;
+  padding: 2rem;
+  box-shadow: var(--box-shadow-light);
+  max-width: 25rem;
+  border-radius: 1rem;
+}
+.portfolio-card-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-card-container:hover.portfolio-card-container::before {
+  display: block;
+  background-color: var(--color-green);
+  opacity: 0.4;
+  backdrop-filter: blur(40px);
+}
+
+.portfolio-img {
+  max-width: 10rem;
+  border-radius: 1rem;
+}
+
+.portfolio-body {
+  display: flex;
+}
+.portfolio-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* -------------------------------------------------------------------------------------- */
 /* ------------------------------Contact------------------------------------------------ */
 /* -------------------------------------------------------------------------------------- */

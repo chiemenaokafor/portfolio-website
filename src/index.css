@@ -1,5 +1,5 @@
 :root {
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-green: #22d172;
   --color-grey: #949494;
   --color-orange: #ff4c29;
@@ -83,6 +83,22 @@ p {
   font-size: 2rem;
   color: var(--color-blue);
 }
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+li::selection,
+ul::selection,
+div::selection,
+span::selection,
+br::selection,
+button::selection {
+  background-color: var(--color-green);
+}
+
 h1::before,
 h1::after,
 h2::before,
