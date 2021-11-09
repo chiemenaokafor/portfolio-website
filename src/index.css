@@ -60,8 +60,16 @@ h1 .h1-span {
 }
 
 h2 {
-  color: var(--color-orange);
+  background: linear-gradient(
+    to right,
+    var(--color-orange) 30%,
+    var(--color-blue) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 7rem;
+  width: fit-content;
 }
 
 h5 {

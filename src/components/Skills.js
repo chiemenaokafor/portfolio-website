@@ -21,8 +21,8 @@ function Skills() {
      
       <div className="skills-content">
  <p>
-        Over the years as a web developer I have been able to keep up so skills
-        that in web development that helps my thinking web designing web sites
+        Over the years as a web developer, I have been able to pick up skills
+        that in web development that helps my thinking in designing web sites
         and vice versa. Below are a few of my skills. Visit the skills page to
         see all.{" "}
       </p>

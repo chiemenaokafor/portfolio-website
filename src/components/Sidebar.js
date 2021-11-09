@@ -13,8 +13,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: fixed;
-  &.active {
-    border-right: 4px solid var(--color-grey-dark);
+  .active {
+    border: 40px solid var(--color-grey-dark);
   }
 `;
 

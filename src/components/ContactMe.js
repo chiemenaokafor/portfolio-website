@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function ContactMe() {
-    return (
-        <div>
-            <h1>Contact me</h1>
-        </div>
-    )
+  return (
+    <div className="contact">
+      <h2>Contact me</h2>
+    </div>
+  );
 }
 
-export default ContactMe
+export default ContactMe;

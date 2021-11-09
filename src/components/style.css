@@ -6,7 +6,6 @@
   width: 15rem;
   height: 100vh;
   background-color: var(--color-blue);
-  position: fixed;
 }
 
 .sidebar-container {
@@ -98,7 +97,6 @@
 }
 
 .about-me-h2 {
-  width: fit-content;
   margin: auto;
 }
 
@@ -223,6 +221,9 @@
 .skills {
   padding: 10rem 5rem;
 }
+.skills h2 {
+  margin-left: 20%;
+}
 
 .skills-content {
   padding-top: 5rem;
@@ -233,18 +234,29 @@
     " para para "
     "dev ui";
   gap: 2rem;
-  /* background-color: var(--color-blue); */
+  justify-items: center;
   border-radius: 4rem;
 }
 .skills-content h5 {
   letter-spacing: 0.5rem;
-  /* color: var(--color-white); */
 }
 .skills-content p {
   grid-area: para;
+  max-width: 100rem;
   margin-bottom: 5rem;
-  /* color: var(--color-white); */
 }
 
 .skills-content-ul {
 }
+
+/* -------------------------------------------------------------------------------------- */
+/* ------------------------------Portfolio------------------------------------------------ */
+/* -------------------------------------------------------------------------------------- */
+
+.portfolio {
+
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* ------------------------------Contact------------------------------------------------ */
+/* -------------------------------------------------------------------------------------- */

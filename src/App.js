@@ -17,6 +17,7 @@ function App() {
     width: "5rem",
     fontSize: "3rem",
     color: "var(--color-orange)",
+    backgroundColor: "var(--color-blue)",
   };
   return (
     <div className="App">
