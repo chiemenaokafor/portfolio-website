@@ -16,7 +16,7 @@ const devData = [
 function Skills() {
   return (
     <div className="skills">
-      <h2 className="skills-h2">Skills</h2>
+      <h2 className="skills-h2">Thing I Know</h2>
 
      
       <div className="skills-content">

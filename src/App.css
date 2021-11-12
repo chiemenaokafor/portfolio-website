@@ -1,4 +1,6 @@
 .App {
+ 
+  margin: auto;
   display: grid;
   grid-template-areas: "sidebar others";
   grid-template-columns: 10rem 1fr;
@@ -14,4 +16,25 @@
   margin: auto;
   grid-area: others;
   max-width: 2000px;
+}
+
+@media (max-width: 900px) {
+  .two {
+    width: 90rem;
+  }
+}
+@media (max-width: 800px) {
+  .two {
+    width: 80rem;
+  }
+}
+@media (max-width: 700px) {
+  .two {
+    width: 70rem;
+  }
+}
+@media (max-width: 500px) {
+  .two {
+    width: 60rem;
+  }
 }

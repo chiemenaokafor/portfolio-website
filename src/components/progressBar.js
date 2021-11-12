@@ -1,33 +1,33 @@
 import React from "react";
 
-const progressBar = ({ bgColor, progress, name }) => {
+const progressBar = ({ progress, name }) => {
   const Parentdiv = {
     height: "1rem",
-    width: "70rem",
+    width: "100%",
     backgroundColor: "var(--color-blue)",
-    borderRadius: "4rem",
+    borderRadius: "1rem",
     margin: "7rem 0",
   };
   const Childdiv = {
     position: "relative",
     height: "100%",
     width: `${progress}%`,
-    borderRadius: "4rem 0 0 4rem",
-    backgroundColor: 'var(--color-green)',
+    borderRadius: "0.5rem 0 0 0.5rem",
+    backgroundColor: "var(--color-ash)",
     textAlign: "right",
   };
 
   const progressText = {
     position: "absolute",
-    padding: 10,
+    padding: "1rem",
     color: "var(--color-white)",
-    backgroundColor: 'var(--color-green)',
+    backgroundColor: "var(--color-ash)",
     fontWeight: 500,
     bottom: 0,
     right: 0,
-    fontSize: "15px",
+    fontSize: "1.5rem",
     width: "max-content",
-    borderRadius: "1rem 1rem 0 0",
+    borderRadius: "0.5rem 0.5rem 0 0",
   };
 
   return (

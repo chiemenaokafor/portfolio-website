@@ -24,7 +24,7 @@ const Button = styled.button`
   height: 5rem;
   border: none;
   font-size: 0px;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   margin: 4rem 0 0 1.5rem;
   cursor: pointer;
   display: flex;
@@ -57,7 +57,7 @@ const SidebarContainer = styled.div`
   width: 10rem;
   height: 80vh;
   margin-top: 5rem;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1rem 1rem 0;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ const SlickBar = styled.ul`
 
   width: ${(props) => (props.clicked ? "30rem" : "10rem")};
   transition: all 0.5s ease;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1rem 1rem 0;
 `;
 const Items = styled(Link)`
   width: 100%;

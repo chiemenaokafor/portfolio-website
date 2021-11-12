@@ -13,13 +13,13 @@ function Welcome() {
             <span> Ui designer</span>
           </TextLoop>{" "}
         </h1>
-        <p>Full Stack Developer & UI Designer</p>
+        <p>I design and build things for the web.</p>
         <div>
           <button className="btn">Contact me!</button>
           <button className="btn">Download CV!</button>
         </div>
       </div>
-      <div className='welcome-img'>
+      <div className="welcome-img">
         <img src={welcome} alt="welcome image" />
       </div>
     </div>

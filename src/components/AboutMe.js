@@ -1,12 +1,10 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+
 import aboutImg from "./photos/about-img.png";
 import {
-  IoPersonCircleOutline,
-  IoCalendarSharp,
-  IoMailOpenSharp,
-  IoCallSharp,
-  IoMapSharp,
-  IoFlagSharp,
   IoLogoTwitter,
   IoLogoWhatsapp,
   IoLogoLinkedin,
@@ -20,7 +18,7 @@ function AboutMe() {
   const AboutMe = () => {};
   return (
     <div className="about-me">
-      <h2 className="about-me-h2">About me </h2>
+      <h2 className="about-me-h2">A Little About Me </h2>
       <div className="about-me-container">
         <div className="about-me-img">
           <img className="about-me-imgg" alt="about me image" src={aboutImg} />
@@ -159,5 +157,6 @@ function AboutMe() {
     </div>
   );
 }
+AOS.init();
 
 export default AboutMe;

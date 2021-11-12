@@ -12,6 +12,7 @@ import SkillsPage from "./pages/SkillsPage";
 
 function App() {
   const scroll = {
+    zIndex: 20000,
     padding: "1rem",
     height: "5rem",
     width: "5rem",
