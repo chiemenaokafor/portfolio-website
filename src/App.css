@@ -1,5 +1,4 @@
 .App {
- 
   margin: auto;
   display: grid;
   grid-template-areas: "sidebar others";
@@ -9,7 +8,7 @@
 .one {
   grid-area: sidebar;
   position: fixed;
-  z-index: 5;
+  z-index: 20001;
 }
 
 .two {
