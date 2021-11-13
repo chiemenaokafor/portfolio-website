@@ -98,7 +98,7 @@ function ContactMe() {
                 value={reason}
                 onChange={(e) => setReason(e.target.value)}
               />
-              <span>Reason for message</span>
+              <span>Reason</span>
             </div>
             <div className=" input-box w100">
               <textarea

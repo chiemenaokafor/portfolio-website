@@ -195,13 +195,18 @@ img {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media only screen and (max-width: 600px) {
   html {
     font-size: 40%;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   html {
     font-size: 35%;
   }
