@@ -1,40 +1,26 @@
-import React, { useState } from "react";
-// import { db } from "../firebase.js";
-// import { collection } from "firebase/firestore";
+import React, { useRef } from "react";
 import { IoCall, IoLocate, IoMailOpen } from "react-icons/io5";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com";
+
 function ContactMe() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [reason, setReason] = useState("");
-  const [message, setMessage] = useState("");
-  const [loader, setLoader] = useState(false);
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoader(true);
-    /*  {
-    db.collection("contact messages")
-      .add({
-        name: name,
-        email: email,
-        phoneNumber: phoneNumber,
-        message: message,
+
+    emailjs
+      .sendForm(
+        "service_fo9vrjk",
+        "template_emct53w",
+        form.current,
+        "user_lvTxurwn8kZv1Dprf0wI5"
+      )
+      .then((res) => {
+        console.log(res.text);
       })
-      .then(() => {
-        alert("Form has been sent!");
-        setLoader(false);
-      })
-      .catch((error) => {
-        alert(error.message);
-        setLoader(false);
-      });
-    }*/
-    setName("");
-    setEmail("");
-    setPhoneNumber("");
-    setMessage("");
-    setReason("");
+      .catch((err) => console.log(err.text));
   };
 
   return (
@@ -76,36 +62,32 @@ function ContactMe() {
         </div>
 
         <div className="contact-form-input">
-          <form className="contact-form-input-box" onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            className="contact-form-input-box"
+            onSubmit={handleSubmit}
+          >
             <div className="input-box w50">
-              <input value={name} onChange={(e) => setName(e.target.value)} />
-
-              <span>Name</span>
+              <input placeholder="Name" type="text" name="name" />
             </div>
             <div className=" input-box w50">
-              <input value={email} onChange={(e) => setEmail(e.target.value)} />
-              <span>Email</span>
+              <input placeholder="E-mail" type="email" name="email" />
             </div>
             <div className=" input-box w50">
               <input
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
+                placeholder="Phone Number"
+                type="text"
+                name="phoneNumber"
               />
-              <span> Phone Number</span>
             </div>
             <div className=" input-box w50">
-              <input
-                value={reason}
-                onChange={(e) => setReason(e.target.value)}
-              />
-              <span>Reason</span>
+              <input placeholder="Reason" type="text" name="reason" />
             </div>
             <div className=" input-box w100">
               <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Write your message..."
+                name="message"
               ></textarea>
-              <span>Write your message...</span>
             </div>
             <input className="btn input-box w100" type="submit" />
           </form>
