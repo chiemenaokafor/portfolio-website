@@ -27,6 +27,10 @@
     "tsparticles": "^1.37.1",
     "web-vitals": "^1.1.2"
   },
+  "engines": {
+    "node": "14.17.6",
+    "npm": "6.14.15"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
