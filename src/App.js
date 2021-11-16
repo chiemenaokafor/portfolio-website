@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/sidebar";
