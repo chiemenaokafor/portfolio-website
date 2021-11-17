@@ -14,7 +14,7 @@ function AboutMe() {
   const AboutMe = () => {};
   return (
     <div className="about-me">
-      <h2 className="about-me-h2">About me </h2>
+      <h2 className="about-me-h2">Not complete </h2>
       <div className="about-me-container">
         <div className="about-me-img">
           <img className="about-me-imgg" alt="about me image" src={aboutImg} />
