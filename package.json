@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This is a portfolio website made by Chiemena to show his work and progress both as a web developer and a ui designer.",
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
@@ -33,16 +33,31 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
   },
-  "author": "",
+  "author": "Okafor Chiemena Derick",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chiemenaokafor/portfolio-website/issues"
   },
-  "homepage": "https://github.com/chiemenaokafor/portfolio-website#readme"
+  "homepage": "https://github.com/chiemenaokafor/portfolio-website#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
