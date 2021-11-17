@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "This is a portfolio website made by Chiemena to show his work and progress both as a web developer and a ui designer.",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
@@ -36,6 +36,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "heroku-postbuild": "npm run build",
     "eject": "react-scripts eject"
   },
   "repository": {
