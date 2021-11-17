@@ -1,7 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This a website built by Chiemena to show his progress both as a developer and a designer.",
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
@@ -21,8 +21,8 @@
     "react-scripts": "^4.0.3",
     "react-scroll-to-top": "^1.0.5",
     "react-spinners": "^0.11.0",
-    "react-text-loop": "^2.3.0",
     "react-toastify": "^8.1.0",
+    "react-text-loop": "^2.3.0",
     "styled-components": "^5.3.3",
     "tsparticles": "^1.37.1",
     "web-vitals": "^1.1.2"
@@ -41,6 +41,9 @@
     "type": "git",
     "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
   },
+  "keywords": [
+    "portfolio"
+  ],
   "author": "Okafor Chiemena Derick",
   "license": "ISC",
   "bugs": {
