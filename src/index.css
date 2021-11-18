@@ -228,3 +228,25 @@ img {
     font-size: 25%;
   }
 }
+/* 
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Okafor Chiemena Derick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiemenaokafor/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/chiemenaokafor/portfolio-website#readme",
+   */
+
+/* "engines": {
+    "node": "14.17.6",
+   "npm": "6.14.15"
+  },
+   "heroku-postbuild": "npm run build"
+ */

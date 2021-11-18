@@ -37,6 +37,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
