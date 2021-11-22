@@ -228,8 +228,9 @@ img {
     font-size: 25%;
   }
 }
-/* 
-"repository": {
+
+/*
+ "repository": {
     "type": "git",
     "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
   },
@@ -242,11 +243,16 @@ img {
     "url": "https://github.com/chiemenaokafor/portfolio-website/issues"
   },
   "homepage": "https://github.com/chiemenaokafor/portfolio-website#readme",
-   */
+  
 
-/* "engines": {
+"engines": {
     "node": "14.17.6",
    "npm": "6.14.15"
+  }, 
+   "scripts": {
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
   },
-   "heroku-postbuild": "npm run build"
+
  */

@@ -3,11 +3,11 @@ import portfolio1 from "./photos/portfolio1.png";
 import portfolio2 from "./photos/portfolio2.png";
 import portfolio3 from "./photos/portfolio3.png";
 import portfolio4 from "./photos/portfolio4.png";
-import Card from "./card";
+import Card from "./Cards/card";
 
 const devWork = [
   {
-    tool: ["react", "javascript"],
+    tools: ["react", "javascript"],
     git: "https://github.com/chiemenaokafor/portfolio-website",
     name: "gettingBooks",
     img: `${portfolio2}`,
@@ -15,7 +15,7 @@ const devWork = [
     url: "https://github.com/chiemenaokafor/portfolio-website",
   },
   {
-    tool: ["node", "react", "express", "mongodb", "javascript"],
+    tools: ["node", "react", "express", "mongodb", "javascript"],
     git: "github link",
     name: "natours",
     img: `${portfolio1}`,
@@ -23,7 +23,7 @@ const devWork = [
     url: "css",
   },
   {
-    tool: ["node", "express", "mongodb", "javascript"],
+    tools: ["node", "express", "mongodb", "javascript"],
     git: "github link",
     name: "the pig game",
     img: `${portfolio3}`,
@@ -31,7 +31,7 @@ const devWork = [
     url: "javaScript",
   },
   {
-    tool: ["express", "mongodb", "javascript"],
+    tools: ["express", "mongodb", "javascript"],
     git: "github link",
     name: "digital yearbook",
     img: `${portfolio4}`,
@@ -80,7 +80,7 @@ class portfolio extends Component {
                     url={item.url}
                     text={item.text}
                     git={item.git}
-                    tools={item.tool}
+                    tools={item.tools}
                   />
                 ))}
               </div>

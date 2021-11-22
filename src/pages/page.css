@@ -11,10 +11,16 @@
 .port-card {
   width: 50rem;
   margin: 2rem;
-  min-height: 82rem;
+  height: 86rem;
   padding: 2rem;
-  box-shadow: var(--box-shadow-light);
+  transform: scale(0.95);
+
+  box-shadow: var(--box-shadow-dark);
   border-radius: var(--border-radius-big);
+  transition: all 0.3s ease;
+}
+.port-card:hover {
+  transform: scale(1);
 }
 
 .port-card-head {
@@ -22,18 +28,26 @@
 }
 .port-card-img {
   height: 100%;
+  border-radius: var(--border-radius-big);
 }
 .port-card-body {
+}
+
+.port-card-body-h {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 47rem;
 }
 .port-card-name {
   font-size: 3rem;
   padding: 1rem 0;
   border-bottom: 0.2rem solid var(--color-ash);
 }
-
 .port-card-text {
-  padding: 1rem 0;
+  flex-grow: 1;
 }
+
 .port-card-tools {
   display: flex;
   flex-wrap: wrap;

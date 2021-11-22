@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressBar from "./progressBar";
+import ProgressBar from "./Cards/progressBar";
 
 const uiData = [
   { bgColor: "#9A54F2", progress: 90, name: "figma" },
@@ -18,15 +18,13 @@ function Skills() {
     <div className="skills">
       <h2 className="skills-h2">Thing I Know</h2>
 
-     
       <div className="skills-content">
- <p>
-        Over the years as a web developer, I have been able to pick up skills
-        that in web development that helps my thinking in designing web sites
-        and vice versa. Below are a few of my skills. Visit the skills page to
-        see all.{" "}
-      </p>
-
+        <p>
+          Over the years as a web developer, I have been able to pick up skills
+          that in web development that helps my thinking in designing web sites
+          and vice versa. Below are a few of my skills. Visit the skills page to
+          see all.{" "}
+        </p>
 
         <div className="skills-content-dev">
           <h5>Web Development</h5>

@@ -27,22 +27,7 @@
     "tsparticles": "^1.37.1",
     "web-vitals": "^1.1.2"
   },
-  "engines": {
-    "node": "14.17.6",
-    "npm": "6.14.15"
-  },
   "devDependencies": {},
-  "scripts": {
-    "heroku-postbuild": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chiemenaokafor/portfolio-website.git"
@@ -56,6 +41,21 @@
     "url": "https://github.com/chiemenaokafor/portfolio-website/issues"
   },
   "homepage": "https://github.com/chiemenaokafor/portfolio-website#readme",
+  "engines": {
+    "node": "14.17.6",
+    "npm": "6.14.15"
+  },
+  "scripts": {
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
